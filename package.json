@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node node1.js",
+    "lint": "npx eslint .",
+    "fix": "npx eslint --fix ."
   },
   "keywords": [],
   "author": "VirgilIAmb",
@@ -13,5 +15,10 @@
   "type": "module",
   "dependencies": {
     "moment": "^2.30.1"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
   }
 }
